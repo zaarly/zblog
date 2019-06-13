@@ -1,0 +1,14 @@
+!!!
+%html{:lang => "en"}
+  %head
+    / Title
+    %title Blog Start-Up | Front - Responsive Website Template
+    
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    
+  %body
+    .container
+      = yield
